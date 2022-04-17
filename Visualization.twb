@@ -1,0 +1,2098 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0324.2209                               -->
+<workbook original-version='18.1' source-build='2022.1.0 (20221.22.0324.2209)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='patient (patient_db)' inline='true' name='federated.1hml9mu1ssklpr17f61ag01rahys' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1ivmqsr00vhyzp17rapmp1pb5r6j'>
+            <connection class='mysql' dbname='patient_db' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.1ivmqsr00vhyzp17rapmp1pb5r6j' name='patient' table='[patient]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.1ivmqsr00vhyzp17rapmp1pb5r6j' name='patient' table='[patient]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>patient_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patient_id]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>patient_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>given_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[given_name]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>given_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>family_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[family_name]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>family_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_birth</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_of_birth]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>date_of_birth</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_death</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_of_death]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>date_of_death</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[phone]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>phone</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>death_by_natural_cause</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[death_by_natural_cause]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>death_by_natural_cause</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alcohol_intake</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[alcohol_intake]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>alcohol_intake</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nicotine_intake</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nicotine_intake]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>nicotine_intake</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[bmi]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>bmi</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>health_issues</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[health_issues]</local-name>
+            <parent-name>[patient]</parent-name>
+            <remote-alias>health_issues</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[patient_64DD8C44C70A4F889BFAA974A4F0AB08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age' datatype='integer' name='[Calculation_790100283792695303]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='datediff(&apos;year&apos;, [date_of_birth], date([date_of_death]))' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='patient' datatype='table' name='[__tableau_internal_object_id__].[patient_64DD8C44C70A4F889BFAA974A4F0AB08]' role='measure' type='quantitative' />
+      <column caption='Alcohol Intake' datatype='string' name='[alcohol_intake]' role='dimension' type='nominal' />
+      <column caption='Bmi' datatype='string' name='[bmi]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date Of Birth' datatype='datetime' name='[date_of_birth]' role='dimension' type='ordinal' />
+      <column caption='Date Of Death' datatype='datetime' name='[date_of_death]' role='dimension' type='ordinal' />
+      <column caption='Death By Natural Cause' datatype='integer' name='[death_by_natural_cause]' role='measure' type='quantitative' />
+      <column caption='Family Name' datatype='string' name='[family_name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Given Name' datatype='string' name='[given_name]' role='dimension' type='nominal' />
+      <column caption='Health Issues' datatype='integer' name='[health_issues]' role='measure' type='quantitative' />
+      <column caption='Nicotine Intake' datatype='string' name='[nicotine_intake]' role='dimension' type='nominal' />
+      <column caption='Patient Id' datatype='integer' name='[patient_id]' role='dimension' type='ordinal' />
+      <column caption='Phone' datatype='string' name='[phone]' role='dimension' type='nominal' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[death_by_natural_cause]' derivation='Count' name='[cnt:death_by_natural_cause:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[death_by_natural_cause]' derivation='Count' name='[pcto:cnt:death_by_natural_cause:ok:1]' pivot='key' type='ordinal'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[death_by_natural_cause]' derivation='Count' name='[pcto:cnt:death_by_natural_cause:ok:2]' pivot='key' type='ordinal'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[death_by_natural_cause]' derivation='Count' name='[pcto:cnt:death_by_natural_cause:ok:3]' pivot='key' type='ordinal'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[death_by_natural_cause]' derivation='Count' name='[pcto:cnt:death_by_natural_cause:ok]' pivot='key' type='ordinal'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[pcto:cnt:death_by_natural_cause:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>0.0045999999999999999</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>0.017399999999999999</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>0.10970000000000001</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>26.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>174.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1097.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.00029999999999999997</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.0109</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.028799999999999999</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>109.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>288.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.0016999999999999999</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.013299999999999999</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.036600000000000001</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>7.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>133.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>366.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.0057000000000000002</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.019599999999999999</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>50.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>196.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.0048999999999999998</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.018800000000000001</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>41.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>188.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.002</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.014200000000000001</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.054600000000000003</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>14.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>142.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>546.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.010500000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.025000000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>94.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>105.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>250.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.00059999999999999995</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.011599999999999999</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.029499999999999998</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>3.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>116.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>295.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.0094000000000000004</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.022800000000000001</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>88.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>228.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.0025999999999999999</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.0154</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.086800000000000002</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>17.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>154.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>868.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.0067000000000000002</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.019900000000000001</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>54.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>199.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.0088000000000000005</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.020299999999999999</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>57.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>203.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.0094999999999999998</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.024299999999999999</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>91.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>243.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.0106</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.027199999999999998</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>95.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>106.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>272.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.0050000000000000001</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.019099999999999999</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>46.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>191.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.0041000000000000003</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.016</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.10879999999999999</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>20.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>160.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1088.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.00069999999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.012800000000000001</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.031699999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>128.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>317.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.0091000000000000004</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.022200000000000001</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>67.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>222.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.0054000000000000003</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.019300000000000001</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>49.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>193.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.0014</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.012999999999999999</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.035700000000000003</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>6.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>130.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>357.0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[pcto:cnt:death_by_natural_cause:ok:3]' type='palette'>
+            <map to='#499894'>
+              <bucket>0.0045999999999999999</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>0.017399999999999999</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>0.10970000000000001</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>26.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>174.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1097.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.00029999999999999997</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.0109</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.028799999999999999</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>109.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>288.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.0016999999999999999</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.013299999999999999</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.036600000000000001</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>7.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>133.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>366.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.0057000000000000002</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.019599999999999999</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>50.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>196.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.0048999999999999998</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.018800000000000001</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>41.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>188.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.002</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.014200000000000001</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.054600000000000003</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>14.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>142.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>546.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.010500000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.025000000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>94.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>105.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>250.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.00059999999999999995</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.011599999999999999</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.029499999999999998</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>3.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>116.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>295.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.0094000000000000004</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.022800000000000001</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>88.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>228.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.0025999999999999999</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.0154</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.086800000000000002</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>17.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>154.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>868.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.0067000000000000002</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.019900000000000001</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>54.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>199.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.0088000000000000005</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.020299999999999999</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>57.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>203.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.0094999999999999998</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.024299999999999999</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>91.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>243.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.0106</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.027199999999999998</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>95.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>106.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>272.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.0050000000000000001</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.019099999999999999</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>46.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>191.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.0041000000000000003</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.016</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.10879999999999999</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>20.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>160.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1088.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.00069999999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.012800000000000001</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.031699999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>128.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>317.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.0091000000000000004</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.022200000000000001</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>67.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>222.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.0054000000000000003</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.019300000000000001</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>49.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>193.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.0014</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.012999999999999999</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.035700000000000003</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>6.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>130.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>357.0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[cnt:death_by_natural_cause:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>174</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1097</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>109</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>288</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>133</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>366</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>50</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>196</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>188</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>142</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>546</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>94</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>105</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>250</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>116</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>295</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>88</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>228</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>154</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>868</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>54</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>199</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>57</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>203</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>91</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>243</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>95</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>106</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>272</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>46</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>191</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>160</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1088</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>128</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>317</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>67</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>222</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>193</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>130</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>357</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[pcto:cnt:death_by_natural_cause:ok:2]' type='palette'>
+            <map to='#499894'>
+              <bucket>0.0045999999999999999</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>0.017399999999999999</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>0.10970000000000001</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>26.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>174.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1097.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.00029999999999999997</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.0109</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.028799999999999999</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>109.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>288.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.0016999999999999999</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.013299999999999999</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.036600000000000001</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>7.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>133.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>366.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.0057000000000000002</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.019599999999999999</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>50.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>196.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.0048999999999999998</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.018800000000000001</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>41.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>188.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.002</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.014200000000000001</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.054600000000000003</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>14.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>142.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>546.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.010500000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.025000000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>94.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>105.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>250.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.00059999999999999995</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.011599999999999999</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.029499999999999998</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>3.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>116.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>295.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.0094000000000000004</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.022800000000000001</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>88.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>228.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.0025999999999999999</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.0154</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.086800000000000002</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>17.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>154.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>868.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.0067000000000000002</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.019900000000000001</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>54.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>199.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.0088000000000000005</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.020299999999999999</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>57.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>203.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.0094999999999999998</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.024299999999999999</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>91.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>243.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.0106</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.027199999999999998</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>95.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>106.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>272.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.0050000000000000001</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.019099999999999999</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>46.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>191.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.0041000000000000003</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.016</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.10879999999999999</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>20.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>160.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1088.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.00069999999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.012800000000000001</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.031699999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>128.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>317.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.0091000000000000004</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.022200000000000001</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>67.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>222.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.0054000000000000003</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.019300000000000001</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>49.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>193.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.0014</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.012999999999999999</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.035700000000000003</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>6.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>130.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>357.0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[pcto:cnt:death_by_natural_cause:ok:1]' type='palette'>
+            <map to='#499894'>
+              <bucket>0.0045999999999999999</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>0.017399999999999999</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>0.10970000000000001</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>26.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>174.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1097.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.00029999999999999997</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.0109</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.028799999999999999</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>109.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>288.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.0016999999999999999</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.013299999999999999</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.036600000000000001</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>7.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>133.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>366.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.0057000000000000002</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>0.019599999999999999</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>50.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>196.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.0048999999999999998</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>0.018800000000000001</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>41.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>188.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.002</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.014200000000000001</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.054600000000000003</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>14.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>142.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>546.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.010500000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>0.025000000000000001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>94.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>105.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>250.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.00059999999999999995</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.011599999999999999</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0.029499999999999998</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>3.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>116.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>295.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.0094000000000000004</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>0.022800000000000001</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>88.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>228.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.0025999999999999999</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.0154</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.086800000000000002</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>17.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>154.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>868.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.0067000000000000002</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0.019900000000000001</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>54.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>199.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.0088000000000000005</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>0.020299999999999999</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>57.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>203.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.0094999999999999998</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>0.024299999999999999</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>91.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>243.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.0106</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>0.027199999999999998</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>95.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>106.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>272.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.0050000000000000001</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.019099999999999999</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>46.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>191.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.0041000000000000003</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.016</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.10879999999999999</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>20.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>160.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1088.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.00069999999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.012800000000000001</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.031699999999999999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>128.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>317.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.0091000000000000004</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>0.022200000000000001</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>67.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>222.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.0054000000000000003</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>0.019300000000000001</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>49.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>193.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.0014</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.012999999999999999</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.035700000000000003</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>6.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>130.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>357.0</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='patient' id='patient_64DD8C44C70A4F889BFAA974A4F0AB08'>
+            <properties context=''>
+              <relation connection='mysql.1ivmqsr00vhyzp17rapmp1pb5r6j' name='patient' table='[patient]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Ratio of Death by Natural and Unnatural for each state'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='patient (patient_db)' name='federated.1hml9mu1ssklpr17f61ag01rahys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hml9mu1ssklpr17f61ag01rahys'>
+            <column caption='Death By Natural Cause' datatype='integer' name='[death_by_natural_cause]' role='measure' type='quantitative' />
+            <column-instance column='[death_by_natural_cause]' derivation='None' name='[none:death_by_natural_cause:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[death_by_natural_cause]' derivation='Count' name='[pcto:cnt:death_by_natural_cause:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1hml9mu1ssklpr17f61ag01rahys].[none:death_by_natural_cause:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1hml9mu1ssklpr17f61ag01rahys].[pcto:cnt:death_by_natural_cause:qk:2]</rows>
+        <cols>[federated.1hml9mu1ssklpr17f61ag01rahys].[none:state:nk]</cols>
+      </table>
+      <simple-id uuid='{6F209F2D-BB42-4847-B9F2-611B24F38277}' />
+    </worksheet>
+    <worksheet name='State-wise average age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='patient (patient_db)' name='federated.1hml9mu1ssklpr17f61ag01rahys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hml9mu1ssklpr17f61ag01rahys'>
+            <column caption='Age' datatype='integer' name='[Calculation_790100283792695303]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='datediff(&apos;year&apos;, [date_of_birth], date([date_of_death]))' />
+            </column>
+            <column-instance column='[Calculation_790100283792695303]' derivation='Avg' name='[avg:Calculation_790100283792695303:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Of Birth' datatype='datetime' name='[date_of_birth]' role='dimension' type='ordinal' />
+            <column caption='Date Of Death' datatype='datetime' name='[date_of_death]' role='dimension' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1hml9mu1ssklpr17f61ag01rahys].[avg:Calculation_790100283792695303:qk]</rows>
+        <cols>[federated.1hml9mu1ssklpr17f61ag01rahys].[none:state:nk]</cols>
+      </table>
+      <simple-id uuid='{66A19112-B675-48BB-82BF-6DEAF2DF5894}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Ratio of Death by Natural and Unnatural for each state'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hml9mu1ssklpr17f61ag01rahys].[none:death_by_natural_cause:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hml9mu1ssklpr17f61ag01rahys].[none:city:nk]</field>
+            <field>[federated.1hml9mu1ssklpr17f61ag01rahys].[none:death_by_natural_cause:qk]</field>
+            <field>[federated.1hml9mu1ssklpr17f61ag01rahys].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D5789713-2870-49C7-B546-F3D113073CFA}' />
+    </window>
+    <window class='worksheet' maximized='true' name='State-wise average age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hml9mu1ssklpr17f61ag01rahys].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9D5A437A-0679-4386-A97A-4C89427FDBBE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Ratio of Death by Natural and Unnatural for each state' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='State-wise average age' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,11 @@
+pandas
+datetime
+numpy 
+pymysql
+plotly
+sqlalchemy 
+matplotlib 
+seaborn
+scikit-learn
+sklearn_pandas
+scipy
