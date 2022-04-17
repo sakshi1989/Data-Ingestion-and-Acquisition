@@ -11,7 +11,7 @@ local MySQL server using SQLAlchemy.
 Exploratory Data analysis, finding suitable categorical features using Chi-Square and classification techniques - Gradient Boosting, Random Forest, Decision Tree and Logistic Regression has been applied on the dummy patient dataset.
 
 ## Running the Notebook
-These notebooks requires certain Python packages. It can be installed by the following command:
+The notebook requires certain Python packages. It can be installed by the following command:
 ```
 pip install -r requirements.txt
 ```
