@@ -1,4 +1,6 @@
 # Data-Ingestion-and-Acquisition
+This repository has been created for the academic assignment.
+
 The data has been read from URL - "https://raw.githubusercontent.com/nthammadi-uncc/DataAcquisition/main/Data/patient_data.csv" into the dataframe and has been dumped to
 local MySQL server using SQLAlchemy.
 
