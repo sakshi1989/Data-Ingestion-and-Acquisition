@@ -9,3 +9,4 @@ seaborn
 scikit-learn
 sklearn_pandas
 scipy
+chart_studio
