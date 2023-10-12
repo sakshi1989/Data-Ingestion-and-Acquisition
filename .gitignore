@@ -1,1 +1,5 @@
 venv
+earlier_connection_function.txt
+*.json
+sqlalchemy_sqlite.ipynb
+census.sqlite
